@@ -29,12 +29,16 @@ body {
     border-radius: 10px;
 }
 
+#bistro{
+    color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 #hero {
     width: 100%;
-    height: 100vh; /* Use viewport height for responsive design */
+    height: 100vh;
     background: linear-gradient(rgba(253, 248, 242, 0.7), rgba(253, 248, 242, 0.7)),
-                url('hero.jpg.jpg') center/cover no-repeat;
+                url('wineandfood.avif') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,11 +50,8 @@ body {
 
 /* Content box */
 .hero-content {
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 1.5rem;
-    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 340px;
 }
