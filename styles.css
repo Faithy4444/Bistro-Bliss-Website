@@ -5,6 +5,7 @@ body {
     background-color: #FDF8F2;
     color: #2E2E2E;
     line-height: 1.6;
+    text-align: center;
 }
 
 #menu-icon{
@@ -30,7 +31,7 @@ body {
 }
 
 #bistro{
-    color: pink;
+    color: #D4BFA5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -140,3 +141,68 @@ body {
         padding: 0.3rem 0.8rem; /* Further adjust button padding for very small screens */
     }
 }
+
+/* Reset box-sizing for easier sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Container with pink border and padding */
+#about-us {
+  border: 5px solid #D4BFA5;
+  padding: 20px;
+  max-width: 1000px;      /* Limit max width for readability */
+  margin: 40px auto;      /* Center horizontally with vertical margin */
+  background-color: #fff; /* Optional: white background */
+  border-radius: 8px;     /* Optional: rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional subtle shadow */
+}
+
+/* Flex container for text and image */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;             /* Space between text and image */
+  flex-wrap: wrap;       /* Allow wrapping on small screens */
+}
+
+/* Text section styling */
+.about-text {
+  flex: 1 1 400px;       /* Flexible width, min 400px */
+  min-width: 280px;      /* Prevent text from getting too narrow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Image styling */
+.about-content img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;        /* Prevent image from shrinking */
+}
+
+/* Responsive: stack vertically on narrow screens */
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-text, 
+  .about-content img {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .about-content img {
+    margin-top: 20px;
+  }
+}
+
